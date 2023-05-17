@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Characters from "./components/Characters";
+import Pagination from "./components/Pagination";
 
 function App() {
-  const [characters, setCharacters] = useState([]);
+  const [characters, setCharacters, ] = useState([]);
 
   const initialurl = "https://rickandmortyapi.com/api/character";
 
@@ -19,13 +20,13 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="bg-dark">
       <Navbar brand="Rick And Morty" />;
       
-      <div className="container">
+      <div className="container mt-5">
         <Characters characters={characters}/>
       </div>
-    </>
+    </div>
   );
 }
 
