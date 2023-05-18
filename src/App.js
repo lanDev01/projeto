@@ -1,18 +1,30 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
-import Characters from "./components/Characters";
-import Pagination from "./components/Pagination";
+import Navbar from "./components/Navbar/Navbar";
+import Characters from "./components/Characters/Characters";
+import Pagination from "./components/Pagination/Pagination";
+import Search from "./components/Search/Search";
 
 function App() {
-  const [characters, setCharacters, ] = useState([]);
+  const [characters, setCharacters] = useState([]);
+  const [info, setInfo] = useState({});
 
   const initialurl = "https://rickandmortyapi.com/api/character";
 
   const fetchCharacters = (url) => {
     fetch(url)
       .then((response) => response.json())
-      .then((data) => setCharacters(data.results))
+      .then((data) => {
+        setCharacters(data.results);
+        setInfo(data.info);
+      })
       .catch((error) => console.log(error));
+  };
+
+  const onPrevious = () => {
+    fetchCharacters(info.prev);
+  };
+  const onNext = () => {
+    fetchCharacters(info.next);
   };
 
   useEffect(() => {
@@ -20,11 +32,19 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-dark">
-      <Navbar brand="Rick And Morty" />;
-      
-      <div className="container mt-5">
-        <Characters characters={characters}/>
+    <div className="p-0 m-0">
+      <div className=" bg-dark">
+        <Navbar brand="Rick And Morty" />;
+        <Search />
+      </div>
+      <div className="container mt-0">
+        <Characters characters={characters} />
+        <Pagination
+          prev={info.prev}
+          next={info.next}
+          onPrevious={onPrevious}
+          onNext={onNext}
+        />
       </div>
     </div>
   );
