@@ -66,7 +66,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Confira o resultado do projeto no link abaixo.
 
-- [Visite o projeto online](https://alan-designer.github.io/projeto/)
+- [Visite o projeto online](https://landev01.github.io/projeto//)
 
 
 ## 📄 Licença
