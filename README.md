@@ -1,21 +1,78 @@
-<!-- para rodar o projeto basta dar cd e acessar o arquivo -->
+ <h1 align="center"> Rick And Morty </h1>
 
-<!-- Dentro do arquivo rodar no terminal 
+<p align="center">
+Esse projeto foi desenvolvido com o consumo da API <a href="https://rickandmortyapi.com/">Rick and Morty</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br/>
+</p>
 
-npm i
+<p align="center">
+<a href="#-Como executar o projeto">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-para instalar a pasta node_modules e as dependecias do react
- -->
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+</p>
 
- <!-- depois disso só rodar o projeto com o comando  
- 
- npm start
+</p>
 
- -->
+## Como executar o projeto
+
+Para executar o projeto executar o projeto 
 
 
- <!-- bootstrap utilizado com link cdn css/js -->
+```html
+  git clone https://github.com/lanDev01/projeto.git
+```
 
- <!-- Download do sass -->
+Dentro do vscode com o arquivo aberto
 
- <!-- npm i sass -->
+```html
+  cd projeto
+```
+
+Para instalar o arquivo node_modules e as dependecias do react
+
+
+```html
+  npm install
+```
+
+para instalar o pré-processador sass
+
+```html
+  npm install -g sass
+```
+
+Após isso é so executar para rodar o projeto
+
+```html
+  npm start
+```
+
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- React
+- JavaScript
+- Bootstrap
+- Sass
+- Git e Github
+
+## 💻 Projeto
+
+Confira o resultado do projeto no link abaixo.
+
+- [Visite o projeto online](https://alan-designer.github.io/projeto/)
+
+
+## 📄 Licença
+
+Esse projeto está sob a licença MIT.
+
+---
+
+Feito com ♥ by Alan
